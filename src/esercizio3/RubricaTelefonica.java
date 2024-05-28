@@ -1,3 +1,5 @@
+package esercizio3;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -37,18 +39,18 @@ public class RubricaTelefonica {
 
     public static void main(String[] args) {
         RubricaTelefonica rubrica = new RubricaTelefonica();
-        rubrica.inserisciContatto("Mario", "1234567890");
-        rubrica.inserisciContatto("Luigi", "0987654321");
-        rubrica.inserisciContatto("Peach", "1112223333");
+        rubrica.inserisciContatto("bob", "1234567890");
+        rubrica.inserisciContatto("armando", "0987654321");
+        rubrica.inserisciContatto("alberto", "1112223333");
 
         System.out.println("Stampa dei contatti:");
         rubrica.stampaRubrica();
 
-        System.out.println("\nNumero di telefono di Luigi: " + rubrica.cercaNumeroDaNome("Luigi"));
+        System.out.println("\nNumero di telefono di armando: " + rubrica.cercaNumeroDaNome("armando"));
         System.out.println("Nome associato al numero 1112223333: " + rubrica.cercaNomeDaNumero("1112223333"));
 
-        rubrica.cancellaContatto("Peach");
-        System.out.println("\nDopo la cancellazione di Peach:");
+        rubrica.cancellaContatto("alberto");
+        System.out.println("\nDopo la cancellazione di alberto:");
         rubrica.stampaRubrica();
     }
 }
